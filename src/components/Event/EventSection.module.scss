@@ -1,0 +1,162 @@
+.event {
+  background-color: #e4f0fa;
+  padding: 130px 0;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 100%;
+    background: #d8eaf9;
+  }
+}
+
+.event-header {
+  z-index: 1;
+  h6 {
+    color: #91999f;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  p {
+    color: #3c416f;
+    font-size: 18px;
+  }
+}
+
+.event-places {
+  list-style: none;
+  padding-left: 0;
+  z-index: 1;
+  margin-bottom: 0;
+
+  li {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 22px;
+    padding: 4px;
+    border: 1px solid slategray;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.current-event {
+  & > img {
+    width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 140px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    top: calc(50% - 70px);
+    left: -50px;
+    box-shadow: 0px 0px 0px 10px rgb(255 255 255 / 50%);
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 86px;
+    top: calc(50% - 43px);
+    left: -134px;
+    z-index: 2;
+    font-size: 18px;
+    color: #4b9438;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .event-places {
+    li {
+      margin-bottom: 20px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 991.5px) {
+  .event {
+    &::before {
+      width: 100%;
+    }
+  }
+  .event-header {
+    text-align: center;
+    h6 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h2 {
+      font-size: 34px;
+      line-height: 44px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  .event-places {
+    margin: 1rem 0 2rem;
+    li {
+      margin-bottom: 0;
+    }
+
+    li:last-child {
+      margin-right: 0px;
+    }
+    justify-content: center;
+  }
+  .current-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+    span {
+      position: unset;
+      display: inline-block;
+      height: unset;
+      box-shadow: 0.872px 9.962px 20px 0px rgb(0 0 0 / 10%);
+      padding: 12px 30px;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #4b9438;
+      margin-bottom: 30px;
+
+      img {
+        display: none;
+      }
+    }
+  }
+}

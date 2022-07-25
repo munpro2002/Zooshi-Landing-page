@@ -1,0 +1,25 @@
+.btn--scroll-to-top {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
+  color: #ffffff;
+  z-index: 999;
+  top: -100px;
+  right: 30px;
+  position: fixed;
+  border-radius: 5px;
+  background: #71b85f;
+  box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 20%);
+  text-align: center;
+  transition: all ease 0.5s;
+
+  &:hover {
+    background: white;
+    color: #71b85f;
+  }
+}
+
+.active {
+  transform: translateY(665px);
+}

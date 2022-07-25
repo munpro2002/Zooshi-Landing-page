@@ -1,0 +1,139 @@
+.footer {
+  padding: 130px 0px 25px;
+  position: relative;
+  background: #71b85f;
+  overflow: hidden;
+
+  .footer__shape {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .footer__dec {
+    position: absolute;
+  }
+
+  & .footer__dec:first-child {
+    bottom: 50px;
+    width: 300px;
+    left: 0;
+  }
+  & .footer__dec:nth-child(2) {
+    bottom: 50px;
+    width: 300px;
+    right: 0;
+  }
+}
+
+.footer__social-link {
+  margin-top: 35px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-weight: 600;
+    margin-right: 12px;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-left: 6px;
+      border-radius: 50%;
+      background: none;
+      color: #fff;
+      line-height: 42px;
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: all ease 0.3s;
+
+      &:hover {
+        background: #fff;
+        color: #71b85f;
+        border: 1px solid #71b85f;
+      }
+    }
+  }
+}
+
+.footer__form {
+  position: relative;
+  margin-top: 35px;
+
+  input {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0px 160px 0px 30px;
+    height: 60px;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    margin-bottom: 50px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+  button {
+    position: absolute;
+    width: auto;
+    height: 60px;
+    font-size: 22px;
+    line-height: 44px;
+    border-radius: 50px;
+    right: 0px;
+    top: 0px;
+    color: #71b85f;
+    border: 0px;
+    padding: 0px 30px;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+  }
+}
+
+.footer__info-box {
+  text-align: center;
+  color: white;
+
+  img {
+    margin-bottom: 25px;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.footer__copyright-text {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-top: 122px;
+  padding-top: 35px;
+  padding-bottom: 8px;
+  color: #fff;
+}
+
+@media (max-width: 1199.5px) {
+  .footer__dec {
+    display: none;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .footer__info-box {
+    margin-bottom: 30px;
+  }
+}

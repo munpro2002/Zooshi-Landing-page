@@ -1,0 +1,68 @@
+.amenities {
+  padding: 130px 0px;
+  background-color: #e4f0fa;
+}
+
+.amenities__title {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h6 {
+    color: #91999f;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 11px;
+  }
+}
+
+.amenity {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 60px 30px 37px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+
+  .icon {
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bolder;
+    color: #3c416f;
+  }
+
+  &:hover {
+    border: 1px solid #71b85f;
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 991.5px) {
+  .amenities {
+    padding-bottom: 100px;
+  }
+
+  .amenity {
+    margin-bottom: 30px;
+  }
+
+  .amenities__title {
+    h6 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h2 {
+      font-size: 34px;
+      line-height: 44px;
+    }
+  }
+}
