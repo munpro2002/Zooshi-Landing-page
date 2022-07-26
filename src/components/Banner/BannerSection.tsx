@@ -1,10 +1,13 @@
 import React from "react";
 import classes from "./BannerSection.module.scss";
 import bannerImg from "../../assets/banner.png";
+import bannerDec from "../../assets/banner-dec.png";
 
 const BannerSection: React.FC<{}> = () => {
   return (
     <div id="home" className={` bg-primary ${classes.banner}`}>
+      <img src={bannerDec} alt="background decoration" />
+      <img src={bannerImg} alt="banner" />
       <div className="container position-relative">
         <div className="row">
           <div className="col-lg-7">
@@ -44,7 +47,6 @@ const BannerSection: React.FC<{}> = () => {
           </div>
         </div>
       </div>
-      <img src={bannerImg} alt="banner" />
     </div>
   );
 };
