@@ -6,7 +6,12 @@ import bannerDec from "../../assets/banner-dec.png";
 const BannerSection: React.FC<{}> = () => {
   return (
     <div id="home" className={` bg-primary ${classes.banner}`}>
-      <img src={bannerDec} alt="background decoration" />
+      <img
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        src={bannerDec}
+        alt="background decoration"
+      />
       <img src={bannerImg} alt="banner" />
       <div className="container position-relative">
         <div className="row">

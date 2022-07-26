@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding: 278px 0px 200px;
 
   & > div {
     z-index: 10;
@@ -64,9 +65,11 @@
   }
 }
 
-@media (min-width: 991.5px) {
+@media (max-width: 1199.5px) {
   .banner {
-    padding: 278px 0px 200px;
+    img:first-child {
+      display: none;
+    }
   }
 }
 
