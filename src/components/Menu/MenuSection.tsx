@@ -44,46 +44,54 @@ const MenuSection: React.FC<{}> = () => {
             <span>Starters</span>
           </div>
         </div>
-        <div className={`row ${classes["menu-dishes"]}`}>
-          <div className="col-sm-6 col-md-4 col-lg-3 bg-white">
-            <img src={recipe1} alt="recipe1" />
-            <FontAwesomeIcon
-              icon={faHeart}
-              className={classes["menu__heart"]}
-            />
-            <span>$16.00</span>
-            <h4>Chicken</h4>
-            <button>Order Now</button>
+        <div className={`row ${classes["menu__dishes"]}`}>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className={`${classes["menu__dish"]} bg-white`}>
+              <img src={recipe1} alt="recipe1" />
+              <FontAwesomeIcon
+                icon={faHeart}
+                className={classes["menu__heart"]}
+              />
+              <span>$16.00</span>
+              <h4>Chicken</h4>
+              <button>Order Now</button>
+            </div>
           </div>
-          <div className="col-sm-6 col-md-4 col-lg-3 bg-white">
-            <img src={recipe2} alt="recipe2" />
-            <FontAwesomeIcon
-              icon={faHeart}
-              className={classes["menu__heart"]}
-            />
-            <span>$16.00</span>
-            <h4>Guerrilla</h4>
-            <button>Order Now</button>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className={`${classes["menu__dish"]} bg-white`}>
+              <img src={recipe2} alt="recipe2" />
+              <FontAwesomeIcon
+                icon={faHeart}
+                className={classes["menu__heart"]}
+              />
+              <span>$16.00</span>
+              <h4>Guerrilla</h4>
+              <button>Order Now</button>
+            </div>
           </div>
-          <div className="col-sm-6 col-md-4 col-lg-3 bg-white">
-            <img src={recipe3} alt="recipe3" />
-            <FontAwesomeIcon
-              icon={faHeart}
-              className={classes["menu__heart"]}
-            />
-            <span>$16.00</span>
-            <h4>Boruto</h4>
-            <button>Order Now</button>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className={`${classes["menu__dish"]} bg-white`}>
+              <img src={recipe3} alt="recipe3" />
+              <FontAwesomeIcon
+                icon={faHeart}
+                className={classes["menu__heart"]}
+              />
+              <span>$16.00</span>
+              <h4>Boruto</h4>
+              <button>Order Now</button>
+            </div>
           </div>
-          <div className="col-sm-6 col-md-4 col-lg-3 bg-white">
-            <img src={recipe4} alt="recipe" />
-            <FontAwesomeIcon
-              icon={faHeart}
-              className={classes["menu__heart"]}
-            />
-            <span>$16.00</span>
-            <h4>Israeli</h4>
-            <button>Order Now</button>
+          <div className="col-sm-6 col-md-4 col-lg-3">
+            <div className={`${classes["menu__dish"]} bg-white`}>
+              <img src={recipe4} alt="recipe" />
+              <FontAwesomeIcon
+                icon={faHeart}
+                className={classes["menu__heart"]}
+              />
+              <span>$16.00</span>
+              <h4>Israeli</h4>
+              <button>Order Now</button>
+            </div>
           </div>
         </div>
       </div>

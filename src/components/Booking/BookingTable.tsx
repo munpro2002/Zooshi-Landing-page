@@ -9,7 +9,10 @@ import timer from "../../assets/time-icon.png";
 
 const BookingTable: React.FC<{}> = () => {
   return (
-    <div className={`${classes[`booking`]} position-relative`}>
+    <div
+      id="booking-section"
+      className={`${classes[`booking`]} position-relative`}
+    >
       <img src={chef2} alt="chef2" />
       <img src={chef1} alt="chef1" />
       <div className={`container ${classes["booking__table"]}`}>

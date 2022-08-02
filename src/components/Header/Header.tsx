@@ -110,9 +110,17 @@ const Header: React.FC<{}> = () => {
             >
               Visit Us
             </Nav.Link>
-            <button className={classes["header__nav-button"]}>
-              Book A Table
-            </button>
+            <Link
+              to="booking-section"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <button className={classes["header__nav-button"]}>
+                Book A Table
+              </button>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

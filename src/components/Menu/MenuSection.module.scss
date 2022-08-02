@@ -65,12 +65,11 @@
   }
 }
 
-.menu-dishes {
+.menu__dishes {
   justify-content: space-around;
 
-  div {
-    height: 280px;
-    width: 210px;
+  .menu__dish {
+    padding: 120px 20px 30px;
     border-radius: 20px;
     margin-bottom: 80px;
     position: relative;
@@ -118,9 +117,9 @@
     }
 
     img {
-      top: -15%;
-      right: 28%;
       position: absolute;
+      top: -22%;
+      right: 44%;
     }
 
     .menu__heart {
@@ -136,6 +135,14 @@
   .bg-decor {
     display: none;
   }
+
+  .menu__dishes {
+    .menu__dish {
+      img {
+        right: 30%;
+      }
+    }
+  }
 }
 
 @media (max-width: 991.5px) {
@@ -150,38 +157,30 @@
 }
 
 @media (max-width: 767.5px) {
-  .dishes {
-    div {
-      height: 276px;
-      width: 240px;
+  .menu__dishes {
+    .menu__dish {
       img {
-        right: 37%;
+        right: 39%;
       }
     }
   }
 }
 
-@media (max-width: 574.5px) {
-  .dishes {
-    div {
-      height: 280px;
-      width: 95%;
+@media (max-width: 575.5px) {
+  .menu__dishes {
+    .menu__dish {
       align-items: center;
-
+      span {
+        margin-left: 0;
+      }
+      h4 {
+        margin-left: 0;
+      }
+      button {
+        margin-left: 0;
+      }
       img {
         right: calc(50% - 76px);
-      }
-    }
-  }
-}
-
-@media (min-width: 1199.5px) {
-  .dishes {
-    div {
-      height: 280px;
-      width: 262px;
-      img {
-        right: 43%;
       }
     }
   }
